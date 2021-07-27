@@ -2,12 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Generic.Base1">
+      <class name="TestScript.HomePageTest">
         <methods>
-          <include name="LaunchBrowser"/>
+          <include name="verifyMobileAndTVLink"/>
+          <include name="precondition"/>
+          <include name="postcondition"/>
         </methods>
-      </class> <!-- Generic.Base1 -->
+      </class> <!-- TestScript.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
