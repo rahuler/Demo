@@ -22,6 +22,8 @@ public void getscreenshot(WebDriver driver,String filename){
 		catch(IOException e){
 			
 			e.printStackTrace();
+		//	e.printStackTrace();
+			
 		}
 }
 	
